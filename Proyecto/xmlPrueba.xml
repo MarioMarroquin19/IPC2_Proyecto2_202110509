@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<CONFIG>
+ <listaElementos>
+    <elemento>
+        <numeroAtomico>26</numeroAtomico>
+        <simbolo>Fe</simbolo>
+        <nombreElemento>Hierro</nombreElemento>
+    </elemento>
+ </listaElementos>
+ <listaMaquinas>
+    <Maquina>
+        <nombre>maquina1</nombre>
+        <numeroPines>20</numeroPines>
+        <numeroElementos>10</numeroElementos>
+        <pin>
+            <elementos>
+            <elemento>H</elemento>
+            </elementos>
+        </pin>
+    </Maquina>
+ </listaMaquinas>
+ <listaCompuestos>
+    <compuesto>
+        <nombre>compuesto1</nombre>
+        <elementos>
+            <elemento>Na</elemento>
+        </elementos>
+    </compuesto>
+ </listaCompuestos>
+</CONFIG>
