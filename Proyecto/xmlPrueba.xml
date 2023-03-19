@@ -6,6 +6,26 @@
         <simbolo>Fe</simbolo>
         <nombreElemento>Hierro</nombreElemento>
     </elemento>
+    <elemento>
+        <numeroAtomico>1</numeroAtomico>
+        <simbolo>H</simbolo>
+        <nombreElemento>Hidrogeno</nombreElemento>
+    </elemento>
+    <elemento>
+        <numeroAtomico>2</numeroAtomico>
+        <simbolo>He</simbolo>
+        <nombreElemento>Helio</nombreElemento>
+    </elemento>
+    <elemento>
+        <numeroAtomico>6</numeroAtomico>
+        <simbolo>O</simbolo>
+        <nombreElemento>Oxigeno</nombreElemento>
+    </elemento>
+    <elemento>    
+        <numeroAtomico>4</numeroAtomico>
+        <simbolo>C</simbolo>
+        <nombreElemento>Carbono</nombreElemento>
+    </elemento>
  </listaElementos>
  <listaMaquinas>
     <Maquina>
@@ -24,7 +44,31 @@
         <nombre>compuesto1</nombre>
         <elementos>
             <elemento>Na</elemento>
+            <elemento>Fe</elemento>
+            <elemento>H</elemento>
+            <elemento>O</elemento>
+            <elemento>C</elemento>
         </elementos>
     </compuesto>
+    <compuesto>
+        <nombre>compuesto2</nombre>
+        <elementos>
+            <elemento>N</elemento>
+            <elemento>A</elemento>
+            <elemento>D</elemento>
+            <elemento>A</elemento>
+            <elemento>C</elemento>
+        </elementos>
+    </compuesto>
+    <compuesto>
+        <nombre>compuesto3</nombre>
+        <elementos>
+            <elemento>O</elemento>
+            <elemento>I</elemento>
+            <elemento>R</elemento>
+            <elemento>A</elemento>
+            <elemento>M</elemento>
+        </elementos>
+    </compuesto>    
  </listaCompuestos>
 </CONFIG>
