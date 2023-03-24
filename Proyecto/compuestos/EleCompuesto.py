@@ -55,3 +55,11 @@ class Lista_EleCompuesto:
             compuesto_invertido += pila_elementos.pop()
 
         return compuesto_invertido
+    
+    def vaciar(self):
+        actual = self.primero
+        while actual:
+            siguiente = actual.siguiente
+            del actual
+            actual = siguiente
+        self.primero = None
