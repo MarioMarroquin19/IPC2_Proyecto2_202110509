@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 import tkinter as tk
 from constante import style
-from EleCompuesto import Lista_EleCompuesto
+from compuestos.EleCompuesto import Lista_EleCompuesto
 
 elemento_Compuesto = Lista_EleCompuesto()
 
@@ -33,23 +33,34 @@ class listaDobleCompuesto:
     
     def verCompuesto_Formulas(self, ventana):
         self.ver = Text(ventana, width=50, height=10, **style.STYLE)
+        self.ver.tag_config("orange", foreground="orange")
+        self.ver.tag_config("white", foreground="white")
         if self.primero is None:
             return
         actual = self.primero
-        self.ver.insert("1.0", "\n--COMPUESTO-- \n" +'    '+str(actual.compuesto.nombre) +'\n-FORMULAS-\n'+'    '+str(elemento_Compuesto.buscarElementos(str(actual.compuesto.nombre)))+'\n')
+        self.ver.insert("1.0", "\n--COMPUESTO-- \n", "orange")
+        self.ver.insert("end",'    '+str(actual.compuesto.nombre)+'\n',"white")
+        self.ver.insert("end",'\n-Formulas:\n', "orange")
+        self.ver.insert("end",'    '+str(elemento_Compuesto.buscarElementos(str(actual.compuesto.nombre)))+'\n', "white")
         while actual.siguiente:
             actual = actual.siguiente
-            self.ver.insert("1.0", "\n--COMPUESTO-- \n"+'    '+str(actual.compuesto.nombre) +'\n-FORMULAS-\n'+'    '+str(elemento_Compuesto.buscarElementos(str(actual.compuesto.nombre)))+'\n')
+            self.ver.insert("end", "\n--COMPUESTO-- \n", "orange")
+            self.ver.insert("end",'    '+str(actual.compuesto.nombre)+'\n',"white")
+            self.ver.insert("end",'\n-Formulas:\n', "orange")
+            self.ver.insert("end",'    '+str(elemento_Compuesto.buscarElementos(str(actual.compuesto.nombre)))+'\n', "white")
         self.ver.configure(state="disabled")
         self.ver.pack(side=tk.TOP,fill=tk.BOTH,expand=True,padx=22,pady=11)
 
     def verFormula_Compuestos(self):
         self.ver.pack(side=tk.TOP,fill=tk.BOTH,expand=True,padx=22,pady=11)
 
+
+    def vaciar(self):
+        actual = self.primero
+        while actual:
+            siguiente = actual.siguiente
+            del actual
+            actual = siguiente
+        self.primero = None
+        elemento_Compuesto.vaciar()
         
-
-
-
-    
-
-
