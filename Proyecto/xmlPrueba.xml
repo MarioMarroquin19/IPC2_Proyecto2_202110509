@@ -30,10 +30,34 @@
  <listaMaquinas>
     <Maquina>
         <nombre>maquina1</nombre>
-        <numeroPines>20</numeroPines>
-        <numeroElementos>10</numeroElementos>
+        <numeroPines>2</numeroPines>
+        <numeroElementos>4</numeroElementos>
         <pin>
             <elementos>
+            <elemento>A</elemento>
+            <elemento>B</elemento>
+            </elementos>
+        </pin>
+        <pin>
+            <elementos>
+            <elemento>C</elemento>
+            <elemento>D</elemento>
+            </elementos>
+        </pin>
+    </Maquina>
+    <Maquina>
+        <nombre>maquina2</nombre>
+        <numeroPines>2</numeroPines>
+        <numeroElementos>4</numeroElementos>
+        <pin>
+            <elementos>
+            <elemento>E</elemento>
+            <elemento>F</elemento>
+            </elementos>
+        </pin>
+        <pin>
+            <elementos>
+            <elemento>G</elemento>
             <elemento>H</elemento>
             </elementos>
         </pin>
