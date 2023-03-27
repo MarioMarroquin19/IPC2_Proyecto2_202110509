@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 import tkinter as tk
+from tkinter import messagebox
 
 class Elemento:
     def __init__(self, numeroAtomico, simbolo, nombreElemento):
@@ -16,56 +17,41 @@ class nodoElemento:
 
 class listaDobleElemento:
     def __init__(self):
-        self.primero = None        
+        self.primero = None    
+        self.utlimo = None         
     
     def insertar(self, elemento):
+        if not self.verificarElemento(elemento):
+            return messagebox.showerror("Error", "Existen Elementos repetidos, verifique el XML de entrada y los elementos ingresados. SE HAN OMITIDO LOS ELEMENTOS REPETIDOS.")
+        nuevo_nodo = nodoElemento(elemento = elemento)
         if self.primero is None:
-            self.primero = nodoElemento(elemento = elemento)
+            self.primero = nuevo_nodo
+            self.ultimo = nuevo_nodo
         else:
-            actual = nodoElemento(elemento = elemento, siguiente = self.primero)
-            self.primero.anterior = actual
-            self.primero = actual
+            nuevo_nodo.siguiente = self.primero
+            self.primero.anterior = nuevo_nodo
+            self.primero = nuevo_nodo
         
-    def recorrer(self):
-        if self.primero is None:
-            print("aun no hay elementos en la lista")
-            return
-        actual = self.primero
-        print("Elemento: ", actual.elemento.nombreElemento +'\n',
-              "Simbolo: ", actual.elemento.simbolo +'\n',
-              "Numero Atomico: ", actual.elemento.numeroAtomico +'\n')
-        while actual.siguiente:
-            actual = actual.siguiente
-            print("Elemento: ", actual.elemento.nombreElemento +'\n',
-                  "Simbolo: ", actual.elemento.simbolo +'\n',
-                  "Numero Atomico: ", actual.elemento.numeroAtomico +'\n') 
 
     #verificar que no se repita elemento, numero atomico ni simbolo
-    def verificarElemento(self, elemento):
+    def verificarElemento(self, elemento):   
         if self.primero is None:
             return True
         actual = self.primero
-        if actual.elemento.nombreElemento == elemento.nombreElemento or actual.elemento.numeroAtomico == elemento.numeroAtomico or actual.elemento.simbolo == elemento.simbolo:
-            return False
-        while actual.siguiente:
-            actual = actual.siguiente
+        while actual is not None:
             if actual.elemento.nombreElemento == elemento.nombreElemento or actual.elemento.numeroAtomico == elemento.numeroAtomico or actual.elemento.simbolo == elemento.simbolo:
                 return False
+            actual = actual.siguiente
         return True
 
     #vaciamos la lista doblemente enlazada        
     def vaciar(self):
-        actual = self.primero
-        while actual:
-            siguiente = actual.siguiente
-            del actual
-            actual = siguiente
         self.primero = None
+        self.ultimo = None
 
     def ordenar(self):
         if self.primero is None:
             return
-
         # Definir variables para el algoritmo bubble sort
         cambiado = True
         while cambiado:
@@ -75,7 +61,7 @@ class listaDobleElemento:
             # Recorrer la lista
             while actual.siguiente:
                 # Comparar número atómico con siguiente elemento
-                if actual.elemento.numeroAtomico > actual.siguiente.elemento.numeroAtomico:
+                if actual.elemento.numeroAtomico < actual.siguiente.elemento.numeroAtomico:
                     # Intercambiar elementos
                     actual.elemento, actual.siguiente.elemento = actual.siguiente.elemento, actual.elemento
                     cambiado = True
@@ -93,7 +79,6 @@ class listaDobleElemento:
         self.tabla.heading("#0", text="Número Atómico")
         self.tabla.heading("#1", text="Simbolo")
         self.tabla.heading("#2", text="Elemento")
-
         if self.primero is None:
             return
         actual = self.primero

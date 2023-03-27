@@ -1,85 +1,13 @@
-digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='blue' cellspacing='0'><tr><td colspan='2' align='center' bgcolor='yellow'>prueba</td></tr><tr><td>PIN</td><td>Elementos</td></tr><tr>
+digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='black' cellspacing='0'><tr><td colspan="2" align="center" bgcolor="yellow">maquina1</td></tr><tr><td>PIN</td><td>Elementos</td></tr><tr>
 <td>Pin:1</td>
-<td colspan='1' rowspan='1'><table border='1' cellpadding='0' cellspacing='0'>
+<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#0ad68b" color="#0ad68b" >H</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#4ca009" color="#4ca009" >A</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#8452d3" color="#8452d3" >He</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1735bd" color="#1735bd" >Li</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1bbf5d" color="#1bbf5d" >Be</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#7f9539" color="#7f9539" >B</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#90751e" color="#90751e" >C</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#6168e4" color="#6168e4" >N</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#0e06cb" color="#0e06cb" >O</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#da4ddf" color="#da4ddf" >F</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#67eff3" color="#67eff3" >Ne</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#7acfc1" color="#7acfc1" >Na</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#c122de" color="#c122de" >Mg</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#41ae0d" color="#41ae0d" >Al</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#c64849" color="#c64849" >Si</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1970c2" color="#1970c2" >P</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#e2087f" color="#e2087f" >S</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#39f482" color="#39f482" >Cl</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b54a16" color="#b54a16" >Ar</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#7fcfd7" color="#7fcfd7" >K</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#2b1629" color="#2b1629" >Ca</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#de186d" color="#de186d" >B</td></tr>
 </table>
 </td>
 </tr>
@@ -88,86 +16,30 @@ digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='blu
 </tr>
 <tr>
 <td>Pin:2</td>
-<td colspan='1' rowspan='1'><table border='1' cellpadding='0' cellspacing='0'>
+<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#fd0c3f" color="#fd0c3f" >Sc</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#c01847" color="#c01847" >C</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#3eaea1" color="#3eaea1" >Ti</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#305277" color="#305277" >D</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#0c5299" color="#0c5299" >V</td></tr>
+</tr>
 </table>
 </td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#eaeb75" color="#eaeb75" >Cr</td></tr>
+</tr>
+<tr><td colspan="2" align="center" bgcolor="yellow">maquina2</td></tr><tr><td>PIN</td><td>Elementos</td></tr><tr>
+<td>Pin:1</td>
+<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#db8c8a" color="#db8c8a" >E</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#6841a9" color="#6841a9" >Mn</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b46695" color="#b46695" >Fe</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#508b1d" color="#508b1d" >Co</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#f20842" color="#f20842" >Ni</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#c881b0" color="#c881b0" >Cu</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#2be072" color="#2be072" >Zn</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#de53f7" color="#de53f7" >Ga</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#3e6fd4" color="#3e6fd4" >Ge</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#0aaf54" color="#0aaf54" >As</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1151d4" color="#1151d4" >Se</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#01898c" color="#01898c" >Br</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#8b1c3b" color="#8b1c3b" >Kr</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#8474b7" color="#8474b7" >Rb</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#bbbfc9" color="#bbbfc9" >Sr</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#97676a" color="#97676a" >Y</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#13ddd0" color="#13ddd0" >Zr</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#c06eaf" color="#c06eaf" >F</td></tr>
 </table>
 </td>
 </tr>
@@ -175,263 +47,15 @@ digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='blu
 </td>
 </tr>
 <tr>
-<td>Pin:3</td>
-<td colspan='1' rowspan='1'><table border='1' cellpadding='0' cellspacing='0'>
+<td>Pin:2</td>
+<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#a77c40" color="#a77c40" >Nb</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#097108" color="#097108" >G</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#701c6d" color="#701c6d" >Mo</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b34c1d" color="#b34c1d" >Tc</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b8eb8a" color="#b8eb8a" >Ru</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#6ad51a" color="#6ad51a" >Rh</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#422db2" color="#422db2" >Pd</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#60bb38" color="#60bb38" >Ag</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#87d2dd" color="#87d2dd" >Cd</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#60c4cf" color="#60c4cf" >In</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#fbeff0" color="#fbeff0" >Sn</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#7ba8bb" color="#7ba8bb" >Sb</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#8d082b" color="#8d082b" >Te</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#991b18" color="#991b18" >I</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#a4600c" color="#a4600c" >Xe</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1a64ea" color="#1a64ea" >Cs</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#94346d" color="#94346d" >Ba</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#64c0df" color="#64c0df" >La</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#d82ef7" color="#d82ef7" >Ce</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#f3d6be" color="#f3d6be" >Pr</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#0df478" color="#0df478" >Nd</td></tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>Pin:4</td>
-<td colspan='1' rowspan='1'><table border='1' cellpadding='0' cellspacing='0'>
-<tr>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#05b95e" color="#05b95e" >Pm</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#33e66e" color="#33e66e" >Sm</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#7ed62f" color="#7ed62f" >Eu</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b81cdf" color="#b81cdf" >Gd</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#313cbc" color="#313cbc" >Tb</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#17fc5d" color="#17fc5d" >Dy</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#6a1fdd" color="#6a1fdd" >Ho</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#78b2f4" color="#78b2f4" >Er</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#53358c" color="#53358c" >Tm</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#e97793" color="#e97793" >Yb</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b4c2bd" color="#b4c2bd" >Lu</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#6f2f51" color="#6f2f51" >Hf</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#958e3e" color="#958e3e" >Ta</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#d3813c" color="#d3813c" >W</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#88cc7f" color="#88cc7f" >Re</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b8ce7e" color="#b8ce7e" >Os</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#d3ca1d" color="#d3ca1d" >Ir</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#8c8f34" color="#8c8f34" >Pt</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#116d53" color="#116d53" >Au</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#ca0c7b" color="#ca0c7b" >Hg</td></tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>Pin:5</td>
-<td colspan='1' rowspan='1'><table border='1' cellpadding='0' cellspacing='0'>
-<tr>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#190601" color="#190601" >Tl</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#b54289" color="#b54289" >Pb</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#27dd07" color="#27dd07" >Bi</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#c9db08" color="#c9db08" >Po</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#f55d83" color="#f55d83" >At</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#69ab9c" color="#69ab9c" >Rn</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#4156a8" color="#4156a8" >Fr</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#916d16" color="#916d16" >Ra</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#bd65c2" color="#bd65c2" >Ac</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#f54c69" color="#f54c69" >Th</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1fa724" color="#1fa724" >Pa</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#1aba08" color="#1aba08" >U</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#584952" color="#584952" >Np</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#6ae0de" color="#6ae0de" >Pu</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#39ac6b" color="#39ac6b" >Am</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#5f28b1" color="#5f28b1" >Cm</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#e8055a" color="#e8055a" >Bk</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#051a42" color="#051a42" >Cf</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#04a787" color="#04a787" >Es</td></tr>
-</table>
-</td>
-<td><table border='0' cellpadding='10' cellspacing='0'>
-<tr><td align='center' bgcolor="#88d99a" color="#88d99a" >Fm</td></tr>
+<td><table border='0' cellpadding='0' cellspacing='0'>
+<tr><td align='center' bgcolor="#dfe782" color="#dfe782" >H</td></tr>
 </table>
 </td>
 </tr>

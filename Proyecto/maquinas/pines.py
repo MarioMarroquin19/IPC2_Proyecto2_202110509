@@ -14,52 +14,34 @@ class nodoPines:
 class listaDoblePines:
     def __init__(self):
         self.primero = None
+        self.ultimo = None
 
     def insertar(self, pines):
+        nuevo_nodo = nodoPines(pines = pines)
         if self.primero is None:
-            self.primero = nodoPines(pines = pines)
+            self.primero = nuevo_nodo
+            self.ultimo = nuevo_nodo
         else:
-            actual = nodoPines(pines = pines, siguiente = self.primero)
-            self.primero.anterior = actual
-            self.primero = actual
+            nuevo_nodo.siguiente = self.primero
+            self.primero.anterior = nuevo_nodo
+            self.primero = nuevo_nodo
     
     #recorrer por medio del numero de pin
     def recorrer(self, numero_pin, nombreMaquina):
         sintaxis = ""
         sintaxis += "<tr>\n"
-        sintaxis += "<td>Pin:"+str(numero_pin)+"</td>\n"
+        sintaxis += f"<td>Pin:{numero_pin}</td>\n"
         sintaxis += "<td colspan=\'1\' rowspan=\'1\'>"
-        sintaxis += "<table border=\'1\' cellpadding=\'0\' cellspacing=\'0\'>\n"
+        sintaxis += "<table border=\'0\' cellpadding=\'0\' cellspacing=\'0\'>\n"
         sintaxis += "<tr>\n"
-        if self.primero is None:
-            return
-        actual = self.primero
-        elementos = []
-        coloresPin = []
-        if actual.pines.numero == numero_pin and actual.pines.nombreMaquina == nombreMaquina:
-            elementos.append(actual.pines.simboloElemento)
-            coloresPin.append(actual.pines.colorPin)
-            '''sintaxis += "<td><table border=\'0\' cellpadding=\'0\' cellspacing=\'0\'>\n"
-            sintaxis += "<tr><td align=\'center\'>"+actual.pines.simboloElemento+"</td></tr>\n"
-            sintaxis += "</table>\n"
-            sintaxis += "</td>\n"'''
-            actual = actual.siguiente
+        actual = self.ultimo
         while actual:    
             if actual.pines.numero == numero_pin and actual.pines.nombreMaquina == nombreMaquina: 
-                elementos.append(actual.pines.simboloElemento)
-                coloresPin.append(actual.pines.colorPin)
-                '''sintaxis += "<td><table border=\'0\' cellpadding=\'0\' cellspacing=\'0\'>\n"
-                sintaxis += "<tr><td align=\'center\'>"+actual.pines.simboloElemento+"</td></tr>\n"
+                sintaxis += "<td><table border=\'0\' cellpadding=\'0\' cellspacing=\'0\'>\n"
+                sintaxis += f"<tr><td align=\'center\' bgcolor=\"{actual.pines.colorPin}\" color=\"{actual.pines.colorPin}\" >{actual.pines.simboloElemento}</td></tr>\n"
                 sintaxis += "</table>\n"
-                sintaxis += "</td>\n"'''
-            actual = actual.siguiente
-        elementos.reverse()
-        for i in range(len(elementos)):
-        #for elemento in elementos:
-            sintaxis += "<td><table border=\'0\' cellpadding=\'10\' cellspacing=\'0\'>\n"
-            sintaxis += "<tr><td align=\'center\' bgcolor=\""+coloresPin[i]+"\" color=\""+coloresPin[i]+"\" >"+elementos[i]+"</td></tr>\n"
-            sintaxis += "</table>\n"
-            sintaxis += "</td>\n"
+                sintaxis += "</td>\n"
+            actual = actual.anterior
         sintaxis += "</tr>\n"
         sintaxis += "</table>\n"
         sintaxis += "</td>\n"
@@ -68,10 +50,6 @@ class listaDoblePines:
 
 
     def vaciar(self):
-        actual = self.primero
-        while actual:
-            siguiente = actual.siguiente
-            del actual
-            actual = siguiente
         self.primero = None
+        self.ultimo = None
 

@@ -17,9 +17,11 @@ from compuestos.EleCompuesto import EleCompuesto
 from maquinas.maquinas import Maquina
 from maquinas.maquinas import listaDobleMaquina
 from maquinas.pines import Pines
+from compuestos.EleCompuesto import Lista_EleCompuesto
+from maquinas.pines import listaDoblePines
 
-
-
+nuevoPinEntrada = listaDoblePines()
+elemento_Compuesto = Lista_EleCompuesto()
 nuevoElementoIngreso = listaDobleElemento()
 nuevoCompuestoIngreso = listaDobleCompuesto()
 nuevaMaquinaIngreso = listaDobleMaquina()
@@ -50,6 +52,8 @@ class Menu(tk.Frame):
         nuevoElementoIngreso.vaciar()
         nuevoCompuestoIngreso.vaciar()
         nuevaMaquinaIngreso.vaciar()
+        nuevoPinEntrada.vaciar()
+        elemento_Compuesto.vaciar()
         messagebox.showinfo("Reiniciar", "Se ha reiniciado el programa")
     
     def abrirXML(self):
@@ -133,8 +137,8 @@ class Menu(tk.Frame):
 def cargarArchivo(root):
     try:
         tree = open(root.name)
-        messagebox.showinfo("Información", "Archivo XML cargado correctamente")
         if tree.readable():
+            messagebox.showinfo("Información", "Archivo XML cargado")
             nueva_configuracion = ET.fromstring(tree.read())
 
             #leemos los elementos del XML
@@ -145,16 +149,8 @@ def cargarArchivo(root):
                 #numero atomico es un entero
                 numeroAtomico = int(numeroAtomico_elemento)
                 
-                #verificamos que no existan elementos repetidos
                 elementoNuevo = Elemento(numeroAtomico, simbolo_elemento, nombre_elemento)
-                repetidos = nuevoElementoIngreso.verificarElemento(elementoNuevo)
-
-                if repetidos == False:
-                    messagebox.showerror("Error", "Existen Elementos repetidos")
-                    nuevoElementoIngreso.vaciar()
-                    break
-                else:
-                    nuevoElementoIngreso.insertar(elementoNuevo)
+                nuevoElementoIngreso.insertar(elementoNuevo)
  
             #leemos las máquinas del XML          
             for maquina in nueva_configuracion.findall('listaMaquinas/Maquina'):
@@ -163,27 +159,27 @@ def cargarArchivo(root):
                 numeroElementos = maquina.find('numeroElementos').text
                 if maquina.findall('pin'):
                     numeroPin = 1
-                    pinesPin = []
                     for pin in maquina.findall('pin'):
                         for elementos in pin.findall('elementos/elemento'):
                             elemento_maquina = elementos.text
                             nuevoPin = Pines(numeroPin,elemento_maquina,nombre_maquina,nuevaMaquinaIngreso.codigo_colorPin())
-                            pinesPin.append(nuevoPin)
+                            nuevoPinEntrada.insertar(nuevoPin)
                         numeroPin += 1
                 numeroPines = int(numeroPines_maquina)
                 numeroElementosMaquina = int(numeroElementos)
-                nuevaMaquina = Maquina(nombre_maquina, numeroPines, numeroElementosMaquina, pinesPin)
+                nuevaMaquina = Maquina(nombre_maquina, numeroPines, numeroElementosMaquina)#, pinesPin
                 nuevaMaquinaIngreso.insertar(nuevaMaquina)
 
             #leemos los compuestos del XML
             for compuesto in nueva_configuracion.findall('listaCompuestos/compuesto'):
                 nombre_compuesto = compuesto.find('nombre').text
-                elementosCompuesto = []
+                nuevoCompuesto = Compuesto(nombre_compuesto)
                 for elementos_compuesto in compuesto.findall('elementos/elemento'):
                     elementosInCompuesto = EleCompuesto(elementos_compuesto.text, nombre_compuesto)
-                    elementosCompuesto.append(elementosInCompuesto)
-                nuevoCompuesto = Compuesto(nombre_compuesto, elementosCompuesto)
+                    elemento_Compuesto.insertar(elementosInCompuesto)
+                nuevoCompuesto = Compuesto(nombre_compuesto)
                 nuevoCompuestoIngreso.insertar(nuevoCompuesto)  
+            #nuevoCompuestoIngreso.verCompuesto_Formulas(None, elemento_Compuesto)
 
     except Exception as e:
         print('Error:',e)
@@ -313,13 +309,13 @@ class GestionCompuestos(tk.Frame):
         self.configure(background=style.BACKGROUND)
         self.controller = controller
         self.init_widgets()
-
-    def salir(self):
-        sys.exit()
     
     def regresar(self):
         self.controller.show_frame(Menu)
     
+    def seleccionarCompuesto(self):
+        self.controller.show_frame(analizarCompuesto)
+
     def ver_listado(self):
         ventana = tk.Tk()
         ventana.geometry("380x500") #ancho y alto
@@ -330,7 +326,8 @@ class GestionCompuestos(tk.Frame):
         def volver():
             ventana.destroy()
         
-        nuevoCompuestoIngreso.verCompuesto_Formulas(ventana)
+        #nuevoCompuestoIngreso.verCompuesto_Formulas(ventana)
+        nuevoCompuestoIngreso.verCompuesto_Formulas(ventana, elemento_Compuesto)
         nuevoCompuestoIngreso.verFormula_Compuestos()
 
         tk.Button(
@@ -341,6 +338,43 @@ class GestionCompuestos(tk.Frame):
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
             activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+
+
+    def init_widgets(self):
+        tk.Button(
+            self,
+            text = "Ver Listado de Compuestos y sus Fórmulas",
+            command=self.ver_listado,
+            **style.STYLE,
+            relief=tk.FLAT,
+            activebackground=style.BACKGROUND,
+            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+        tk.Button(
+            self,
+            text = "Analizar Compuesto",
+            command=self.seleccionarCompuesto,
+            **style.STYLE,
+            relief=tk.FLAT,
+            activebackground=style.BACKGROUND,
+            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+        tk.Button(
+            self,
+            text = "Regresar",
+            command=self.regresar,
+            **style.STYLE,
+            relief=tk.FLAT,
+            activebackground=style.BACKGROUND,
+            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+        
+class analizarCompuesto(tk.Frame):
+    def __init__(self, parent, controller):
+        super().__init__(parent)
+        self.configure(background=style.BACKGROUND)
+        self.controller = controller
+        self.init_widgets()
+    
+    def regresar(self):
+        self.controller.show_frame(GestionCompuestos)
 
     def seleccionarCompuesto(self):
         ventana = tk.Tk()
@@ -363,21 +397,28 @@ class GestionCompuestos(tk.Frame):
 
         tk.Button(ventana, text = "Aceptar", command=obtenerNombreCompuesto, **style.STYLE, relief=tk.FLAT, activebackground=style.BACKGROUND, activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)        
         tk.Button(ventana, text = "Regresar", command=volver, **style.STYLE, relief=tk.FLAT, activebackground=style.BACKGROUND, activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
-
-
+    
     def init_widgets(self):
         tk.Button(
             self,
-            text = "Ver Listado de Compuestos y sus Fórmulas",
-            command=self.ver_listado,
+            text = "Seleccionar un Compuesto",
+            command=self.seleccionarCompuesto,
             **style.STYLE,
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
             activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
         tk.Button(
             self,
-            text = "Analizar Compuesto",
-            command=self.seleccionarCompuesto,
+            text = "Ver Listado de Maquinas y Tiempos",
+            #command=self.regresar,
+            **style.STYLE,
+            relief=tk.FLAT,
+            activebackground=style.BACKGROUND,
+            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+        tk.Button(
+            self,
+            text = "Ver listado de Instrucciones",
+            #command=self.regresar,
             **style.STYLE,
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
@@ -407,15 +448,18 @@ class GestionMaquinas(tk.Frame):
         self.controller.show_frame(Menu)
 
     def verPrueba(self):
-        nuevaMaquinaIngreso.recorrer()
+        nuevaMaquinaIngreso.recorrer(nuevoPinEntrada)
 
     def verImagen(self):
         nuevaMaquinaIngreso.verImg()
 
+    def verSVG(self):
+        nuevaMaquinaIngreso.verSVG()
+
     def init_widgets(self):
         tk.Button(
             self,
-            text = "Ver Gráficamente Listado de Máquinas",	
+            text = "Graficar Listado de Máquinas",	
             command=self.verPrueba,
             **style.STYLE,
             relief=tk.FLAT,
@@ -423,8 +467,16 @@ class GestionMaquinas(tk.Frame):
             activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
         tk.Button(
             self,
-            text = "Visualizar imagen de la máquina",
+            text = "Visualizar imagen de las máquinas",
             command=self.verImagen,
+            **style.STYLE,
+            relief=tk.FLAT,
+            activebackground=style.BACKGROUND,
+            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+        tk.Button(
+            self,
+            text = "Visualizar SVG de las máquinas",
+            command=self.verSVG,
             **style.STYLE,
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
