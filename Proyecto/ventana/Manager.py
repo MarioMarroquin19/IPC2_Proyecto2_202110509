@@ -1,7 +1,7 @@
 import tkinter as tk
 from typing import Container
 from constante import style
-from ventana.screens import Menu,GestionarElementosQuimicos,GestionCompuestos,GestionMaquinas,Ayuda #,Menu1
+from ventana.screens import Menu,GestionarElementosQuimicos,GestionCompuestos,GestionMaquinas,Ayuda,analizarCompuesto
 
 
 class Manager(tk.Tk):
@@ -16,7 +16,7 @@ class Manager(tk.Tk):
         container.grid_columnconfigure(0, weight=1)
 
         self.frames = {}
-        for F in (Menu,GestionarElementosQuimicos,GestionCompuestos,GestionMaquinas,Ayuda): #las ventanas que vamos creando
+        for F in (Menu,GestionarElementosQuimicos,GestionCompuestos,GestionMaquinas,Ayuda,analizarCompuesto): #las ventanas que vamos creando
             frame = F(container, self)
             self.frames[F] = frame
             frame.grid(row=0, column=0, sticky="nsew")

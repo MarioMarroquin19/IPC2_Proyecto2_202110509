@@ -3,15 +3,16 @@ from tkinter import messagebox
 from maquinas.pines import listaDoblePines
 import random
 from colour import Color
+from graphviz import Digraph, Source
 
 nuevoPin = listaDoblePines()
 
 class Maquina:
-    def __init__(self, nombre, numeroPines, numeroElementos, pines):
+    def __init__(self, nombre, numeroPines, numeroElementos): #, pines
         self.nombre = nombre
         self.numeroPines = numeroPines
         self.numeroElementos = numeroElementos
-        self.pines = pines
+        #self.pines = pines
 
 class nodoMaquina:
     def __init__(self, maquina, siguiente = None, anterior = None):
@@ -20,41 +21,40 @@ class nodoMaquina:
         self.anterior = anterior
 
 class listaDobleMaquina:
+
     def __init__(self):
         self.primero = None
+        self.ultimo = None
 
     def insertar(self, maquina):
-        for pin in maquina.pines:
-            nuevoPin.insertar(pin)
+        '''for pin in maquina.pines:
+            nuevoPin.insertar(pin)'''
+        nuevo_nodo = nodoMaquina(maquina = maquina)
         if self.primero is None:
-            self.primero = nodoMaquina(maquina = maquina)
+            self.primero = nuevo_nodo
+            self.ultimo = nuevo_nodo
         else:
-            actual = nodoMaquina(maquina = maquina, siguiente = self.primero)
-            self.primero.anterior = actual
-            self.primero = actual
+            nuevo_nodo.siguiente = self.primero
+            self.primero.anterior = nuevo_nodo
+            self.primero = nuevo_nodo
     
-    def recorrer(self):
+    def recorrer(self, nuevoPin):
         sintaxisAntes = ""
         sintaxis = ""
         sintaxisFinal = ""
         sintaxisAntes += "digraph {"
         sintaxisAntes += "tbl ["
         sintaxisAntes += "shape=plaintext label=<"
-        sintaxisAntes += "<table border=\'0\' cellborder=\'1\' color=\'blue\' cellspacing=\'0\'>"
-        if self.primero is None:
-            return
-        actual = self.primero
-        sintaxis += "<tr><td colspan=\'2\' align=\'center\' bgcolor=\'yellow\'>"+actual.maquina.nombre+"</td></tr>"
-        sintaxis += "<tr><td>PIN</td><td>Elementos</td></tr>"
-        for i in range(1,actual.maquina.numeroPines+1):
-            sintaxis += nuevoPin.recorrer(i, actual.maquina.nombre)
-        while actual.siguiente:
-            actual = actual.siguiente
-            sintaxis += "<tr><td colspan=\'2\' align=\'center\' bgcolor=\'yellow\'>"+actual.maquina.nombre+"</td></tr>"
+        sintaxisAntes += "<table border=\'0\' cellborder=\'1\' color=\'black\' cellspacing=\'0\'>"
+        if self.ultimo is None:
+            return messagebox.showerror("Error", "No hay ninguna máquina registrada")
+        actual = self.ultimo
+        while actual:
+            sintaxis += f'<tr><td colspan="2" align="center" bgcolor="yellow">{actual.maquina.nombre}</td></tr>'
             sintaxis += "<tr><td>PIN</td><td>Elementos</td></tr>"
             for i in range(1,actual.maquina.numeroPines+1):
                 sintaxis += nuevoPin.recorrer(i, actual.maquina.nombre)
-        
+            actual = actual.anterior
         sintaxisFinal = "</table>>];\n"
         sintaxisFinal += "}"
         #Generar imagen y archivo dot
@@ -76,6 +76,12 @@ class listaDobleMaquina:
         file.write(sintaxisAntes+sintaxis+sintaxisFinal)
         file.close()
         os.system(nodo_final)
+        directorio = os.getcwd()
+        with open(directorio+"\\Proyecto\\maquinas\\grafica_graphviz\\Maquina_grafica.dot", "r") as archivo:
+            contenido = archivo.read()
+        # Renderizar archivo .dot a .svg
+        grafo = Source(contenido, format="svg")
+        grafo.render("Proyecto/maquinas/grafica_graphviz/maquina_grafica", format="svg", cleanup=True)
         messagebox.showinfo("Informacion", "Se ha generado la gráfica correctamente")
 
     def verImg(self):
@@ -84,29 +90,28 @@ class listaDobleMaquina:
             os.startfile(directorio+"\\Proyecto\\maquinas\\grafica_graphviz\\Maquina_grafica.png")
         except:
             messagebox.showerror("Error", "Aún no se ha generado alguna gráfica")
+    
+    def verSVG(self):
+        try:
+            directorio = os.getcwd()
+            os.startfile(directorio+"\\Proyecto\\maquinas\\grafica_graphviz\\maquina_grafica.svg")
+        except:
+            messagebox.showerror("Error", "Aún no se ha generado alguna gráfica")
 
     def vaciar(self):
         try:
-            actual = self.primero
-            while actual:
-                siguiente = actual.siguiente
-                del actual
-                actual = siguiente
             self.primero = None
-            nuevoPin.vaciar()
+            self.ultimo = None
+            #borramos la imagen
             directorio = os.getcwd()
             os.remove(directorio+"\\Proyecto\\maquinas\\grafica_graphviz\\Maquina_grafica.png")
+            os.remove(directorio+"\\Proyecto\\maquinas\\grafica_graphviz\\Maquina_grafica.dot")
+            os.remove(directorio+"\\Proyecto\\maquinas\\grafica_graphviz\\maquina_grafica.svg")
         except:
-            actual = self.primero
-            while actual:
-                siguiente = actual.siguiente
-                del actual
-                actual = siguiente
             self.primero = None
-            nuevoPin.vaciar()
-
+            self.ultimo = None
 
     def codigo_colorPin(self):
         color = Color(rgb=(random.random(), random.random(), random.random()))
         color_name = color.get_hex_l()
-        return str(color_name)
+        return str(color_name)       
