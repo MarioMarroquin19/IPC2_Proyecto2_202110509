@@ -60,6 +60,9 @@ class Menu(tk.Frame):
         self.abrirXML_archivo = filedialog.askopenfile(title = 'Abrir Archivo', filetypes = [('XML files', '*.xml'), 
         ('All Files', '*.*')])
         cargarArchivo(self.abrirXML_archivo)
+    
+    def XMLSalida(self):
+        nuevoPinEntrada.generarXmlSalida(nuevoCompuestoIngreso,elemento_Compuesto,nuevaMaquinaIngreso)
 
     def init_widgets(self):
         tk.Label(self, 
@@ -79,7 +82,7 @@ class Menu(tk.Frame):
         tk.Button(
             self,
             text = "Generar un XML de Salida",
-            #command=self.salir,
+            command=self.XMLSalida,
             **style.STYLE,
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
@@ -148,9 +151,9 @@ def cargarArchivo(root):
                 nombre_elemento = elemento.find('nombreElemento').text
                 #numero atomico es un entero
                 numeroAtomico = int(numeroAtomico_elemento)
-                
                 elementoNuevo = Elemento(numeroAtomico, simbolo_elemento, nombre_elemento)
                 nuevoElementoIngreso.insertar(elementoNuevo)
+            nuevoElementoIngreso.resetear()
  
             #leemos las máquinas del XML          
             for maquina in nueva_configuracion.findall('listaMaquinas/Maquina'):
@@ -391,13 +394,39 @@ class analizarCompuesto(tk.Frame):
         insertarCompuesto = tk.Entry(ventana, **style.STYLE5)
         insertarCompuesto.pack(side = tk.TOP,fill = tk.BOTH,padx=22,pady=11)
 
-        def obtenerNombreCompuesto():
+        def obtenerNombreCompuesto():              
             nombreCompuesto = insertarCompuesto.get()
-            print(nombreCompuesto)
+            ventana.destroy()  
+            nuevoPinEntrada.crearTabla(nombreCompuesto,elemento_Compuesto, nuevaMaquinaIngreso)
 
         tk.Button(ventana, text = "Aceptar", command=obtenerNombreCompuesto, **style.STYLE, relief=tk.FLAT, activebackground=style.BACKGROUND, activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)        
         tk.Button(ventana, text = "Regresar", command=volver, **style.STYLE, relief=tk.FLAT, activebackground=style.BACKGROUND, activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
     
+    def verMaquinaTiempo(self):
+        ventana = tk.Tk()
+        ventana.geometry("380x500") #ancho y alto
+        ventana.title("Máquinas y tiempos")
+        ventana.resizable(False,False)
+        ventana.configure(background=style.BACKGROUND)
+
+        def volver():
+            ventana.destroy()
+
+        nuevoPinEntrada.funcionamiento(ventana,nuevaMaquinaIngreso)
+        nuevoPinEntrada.verMaquinas()
+
+        tk.Button(
+            ventana,
+            text = "Regresar",
+            command=volver,
+            **style.STYLE,
+            relief=tk.FLAT,
+            activebackground=style.BACKGROUND,
+            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
+    
+    def verInstrucciones(self):
+        nuevoPinEntrada.verSVG()
+
     def init_widgets(self):
         tk.Button(
             self,
@@ -410,7 +439,7 @@ class analizarCompuesto(tk.Frame):
         tk.Button(
             self,
             text = "Ver Listado de Maquinas y Tiempos",
-            #command=self.regresar,
+            command=self.verMaquinaTiempo,
             **style.STYLE,
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
@@ -418,7 +447,7 @@ class analizarCompuesto(tk.Frame):
         tk.Button(
             self,
             text = "Ver listado de Instrucciones",
-            #command=self.regresar,
+            command=self.verInstrucciones,
             **style.STYLE,
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
@@ -448,7 +477,7 @@ class GestionMaquinas(tk.Frame):
         self.controller.show_frame(Menu)
 
     def verPrueba(self):
-        nuevaMaquinaIngreso.recorrer(nuevoPinEntrada)
+        nuevaMaquinaIngreso.recorrer(nuevoPinEntrada, nuevoElementoIngreso)
 
     def verImagen(self):
         nuevaMaquinaIngreso.verImg()
@@ -508,7 +537,12 @@ class Ayuda(tk.Frame):
     
     def doc_oficial(self):
         directorio = os.getcwd()
-        os.startfile(directorio+"\Documentacion\DocumentacionOficial_202110509.pdf")
+        ruta_documentacion = os.path.abspath(os.path.join(directorio, "..", "Documentacion"))
+        os.chdir(ruta_documentacion)
+        ruta_archivo = os.path.join(ruta_documentacion,'DocumentacionOficial_202110509.pdf')
+        os.startfile(ruta_archivo)
+        #volvemos a la carpeta principal de trabajo, evitamos que no nos cambie el directorio
+        os.chdir(directorio)
     
     def init_widgets(self):
         tk.Label(self,
@@ -535,14 +569,6 @@ class Ayuda(tk.Frame):
             text = "2815806340401@ingenieria.usac.edu.gt",
             justify= tk.LEFT,
             **style.STYLE4).pack(side = tk.TOP,fill = tk.BOTH,expand = False,padx=22,pady=11)
-        tk.Button(
-            self,
-            text = "Manual de Usuario",
-            #command=self.salir,
-            **style.STYLE,
-            relief=tk.FLAT,
-            activebackground=style.BACKGROUND,
-            activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
         tk.Button(
             self,
             text = "Documentación Oficial",
