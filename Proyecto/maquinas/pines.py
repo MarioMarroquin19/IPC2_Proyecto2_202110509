@@ -84,17 +84,15 @@ class listaDoblePines:
         return sintaxis
             
     #funcion para verificar en que pin esta el elemento
-    def existe(self, nombreCompuesto, eleCompuesto, maquina):
-        # for maquina in maquinas.devolverMaquinas():
-        #     tiempo = 1
+    def existe(self, nombreCompuesto, eleCompuesto, maquina, nombreMaquina):
             for i in range(1,maquina+1):
                 for elemento in eleCompuesto.devolverElementos(nombreCompuesto):
                     actual = self.primero
                     columna = 0
                     while actual:
-                        if actual.pines.numero == i and actual.pines.simboloElemento != elemento:
+                        if actual.pines.numero == i and actual.pines.simboloElemento != elemento and actual.pines.nombreMaquina == nombreMaquina:
                             columna += 1 
-                        if actual.pines.numero == i and actual.pines.simboloElemento == elemento:
+                        if actual.pines.numero == i and actual.pines.simboloElemento == elemento and actual.pines.nombreMaquina == nombreMaquina:
                             #mensaje = (f'FUSIÓN EN: \nEstá en el pin:{i}, el elemento es:{elemento}, su columna:{columna}')
                             #print(mensaje)
                             yield i, elemento, columna
@@ -104,31 +102,31 @@ class listaDoblePines:
         for maq in maquinas.devolverNombreMaquina():
             tiempo1 = 0
             #for maquina in maquinas.devolverMaquinas():
-            for num, elemento, columna in self.existe(nombreCompuesto, eleCompuesto, maquinas.devolverMaquinas(maq)):
+            for num, elemento, columna in self.existe(nombreCompuesto, eleCompuesto, maquinas.devolverMaquinas(maq), maq):
                 for c in range(columna):
                     tiempo1 += 1
                 tiempo1 += 1
-            tiempoMa = TiempoMaquina(maq, tiempo1)
+            tiempoMa = TiempoMaquina(maq, tiempo1, nombreCompuesto)
             tiempoMaquina.insertar(tiempoMa)
 
         sintaxis = ""
         sintaxisFinal = ""
         sintaxisAntes = ""
         sintaxisAntes += "digraph {tbl [shape=plaintext label=<<table border=\'0\' cellborder=\'1\' color=\'black\' cellspacing=\'0\'>"
-        for maq in maquinas.devolverNombreMaquina():
+        for maqu in maquinas.devolverNombreMaquina():
             tiempo = 0
             #for maquina in maquinas.devolverMaquinas():
-            sintaxis +=f"<tr><td colspan=\"1000\" align=\"center\" bgcolor=\"yellow\">Instrucciones para construir el compuesto: {nombreCompuesto}, MAQUINA: {maq}, TIEMPO: {tiempoMaquina.devolverTiempo(maq)} segundos</td></tr>"
-            for num, elemento, columna in self.existe(nombreCompuesto, eleCompuesto, maquinas.devolverMaquinas(maq)):
+            sintaxis +=f"<tr><td colspan=\"1000\" align=\"center\" bgcolor=\"yellow\">Instrucciones para construir el compuesto: {nombreCompuesto}, MAQUINA: {maqu}, TIEMPO: {tiempoMaquina.devolverTiempo(maqu,nombreCompuesto)} segundos</td></tr>"
+            for num1, elemento1, columna1 in self.existe(nombreCompuesto, eleCompuesto, maquinas.devolverMaquinas(maqu), maqu):
                 sintaxis += "<tr>\n"
-                sintaxis += f"<td>Pin:{num}</td>\n"
-                for c in range(columna):
+                sintaxis += f"<td>Pin:{num1}</td>\n"
+                for c in range(columna1):
                     sintaxis += "<td>Mover adelante</td>\n"
                     tiempo += 1
-                sintaxis += f"<td bgcolor=\'red\'>FUSIONAR {elemento}</td>\n"
+                sintaxis += f"<td bgcolor=\'red\'>FUSIONAR {elemento1}</td>\n"
                 tiempo += 1
                 sintaxis += "</tr>\n"
-            sintaxisFinal += "</table>>];}"
+        sintaxisFinal += "</table>>];}"
         cadena1=os.path.dirname(os.path.abspath(__file__))
         ruta=cadena1
         ruta+="\\grafica_graphviz\\Instrucciones_"
@@ -156,7 +154,7 @@ class listaDoblePines:
         messagebox.showinfo("Informacion", "Se ha generado la gráfica correctamente")
                  
     #funcionamiento de la maquina
-    def funcionamiento(self, ventana,maquinas):
+    def funcionamiento(self, ventana,maquinas,nombreCompuesto):
         #listar maquinas
         self.ver = Text(ventana, width=50, height=10, **style.STYLE)
         self.ver.tag_config("orange", foreground="orange")
@@ -165,22 +163,22 @@ class listaDoblePines:
             self.ver.insert("end", "\n--MAQUINA-- \n", "orange")
             self.ver.insert("end", "    "+maquina+"\n", "white")
             self.ver.insert("end", "\n-Tiempo necesario para producir el compuesto: \n", "orange")
-            self.ver.insert('end', f"Tiempo (segundos): {tiempoMaquina.devolverTiempo(maquina)}\n", "white")
+            self.ver.insert('end', f"Tiempo (segundos): {tiempoMaquina.devolverTiempo(maquina,nombreCompuesto)}\n", "white")
         self.ver.configure(state="disabled")
         self.ver.pack(side=tk.TOP,fill=tk.BOTH,expand=True,padx=22,pady=11)
     
     def verMaquinas(self):
         self.ver.pack(side=tk.TOP,fill=tk.BOTH,expand=True,padx=22,pady=11)  
     
-    def todos(self, nomCompuesto,eleCompuesto ,maquina):
+    def todos(self, nomCompuesto,eleCompuesto ,maquina, nombreMaquina):
             for i in range(1,maquina+1):
                 for elemento in eleCompuesto.devolverElementos(nomCompuesto):
                     actual = self.primero
                     columna = 0
                     while actual:
-                        if actual.pines.numero == i and actual.pines.simboloElemento != elemento:
+                        if actual.pines.numero == i and actual.pines.simboloElemento != elemento and actual.pines.nombreMaquina == nombreMaquina:
                             columna += 1 
-                        if actual.pines.numero == i and actual.pines.simboloElemento == elemento:
+                        if actual.pines.numero == i and actual.pines.simboloElemento == elemento and actual.pines.nombreMaquina == nombreMaquina:
                             #mensaje = (f'FUSIÓN EN: \nEstá en el pin:{i}, el elemento es:{elemento}, su columna:{columna}')
                             #print(mensaje)
                             yield i, elemento, columna
@@ -192,31 +190,31 @@ class listaDoblePines:
             for maq in maquinas.devolverNombreMaquina():
                 tiempo1 = 0
                 #for maquina in maquinas.devolverMaquinas():
-                for num, elemento, columna in self.todos(nombreCompuesto,eleCompuesto ,maquinas.devolverMaquinas(maq)):
+                for num, elemento, columna in self.todos(nombreCompuesto,eleCompuesto ,maquinas.devolverMaquinas(maq), maq):
                     for c in range(columna):
                         tiempo1 += 1
                     tiempo1 += 1
-                tiempoMa = TiempoMaquina(maq, tiempo1)
+                tiempoMa = TiempoMaquina(maq, tiempo1, nombreCompuesto)
                 tiempoMaquina1.insertar(tiempoMa)
         root = ET.Element('RESPUESTA')
         hijo = ET.SubElement(root, 'listaCompuestos')
-        hijo1 = ET.SubElement(hijo, 'compuesto')
-        hijo3 = ET.SubElement(hijo1, 'nombre')
         for nombre in Compuesto.devolverCompuestos():
+            hijo1 = ET.SubElement(hijo, 'compuesto')
+            hijo3 = ET.SubElement(hijo1, 'nombre')
             hijo3.text = nombre
-            for maq in maquinas.devolverNombreMaquina():
+            for maqu in maquinas.devolverNombreMaquina():
                 hijo4 = ET.SubElement(hijo1, 'maquina')
-                hijo4.text = maq
+                hijo4.text = maqu
                 hijo5 = ET.SubElement(hijo1, 'tiempoOptimo')
-                hijo5.text = str(tiempoMaquina1.devolverTiempo(maq))
+                hijo5.text = str(tiempoMaquina1.devolverTiempo(maqu,nombre))
                 hijo6 = ET.SubElement(hijo1, 'instrucciones')
                 hijo7 = ET.SubElement(hijo6, 'tiempo')
                 hijo8 = ET.SubElement(hijo7, 'numeroSegundos')
-                hijo8.text = str(tiempoMaquina1.devolverTiempo(maq))
+                hijo8.text = str(tiempoMaquina1.devolverTiempo(maqu,nombre))
                 hijo9 = ET.SubElement(hijo7, 'acciones')
                 hijo10 = ET.SubElement(hijo9, 'accionPin')
                 #for maquina in maquinas.devolverMaquinas():
-                for num, elemento, columna in self.todos(nombre,eleCompuesto ,maquinas.devolverMaquinas(maq)):
+                for num, elemento, columna in self.todos(nombre,eleCompuesto ,maquinas.devolverMaquinas(maqu), maqu):
                     hijo11 = ET.SubElement(hijo10, 'numeroPin')
                     hijo11.text = str(num)
                     for c in range(columna+1):
