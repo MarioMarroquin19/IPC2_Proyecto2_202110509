@@ -1,0 +1,265 @@
+digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='black' cellspacing='0'><tr><td colspan="1000" align="center" bgcolor="yellow">Instrucciones para construir el compuesto: Energon, Maquina: maquina1, TIEMPO: 30 segundos</td></tr><tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Np</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Md</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Cm</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Au</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td bgcolor='red'>FUSIONAR Ta</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR In</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Pr</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Yb</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR W</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td bgcolor='red'>FUSIONAR Po</td>
+</tr>
+<tr><td colspan="1000" align="center" bgcolor="yellow">Instrucciones para construir el compuesto: Energon, Maquina: prueba, TIEMPO: 147 segundos</td></tr><tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Np</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Md</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Cm</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Au</td>
+</tr>
+<tr>
+<td>Pin:1</td>
+<td bgcolor='red'>FUSIONAR Ta</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR In</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Pr</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Yb</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR W</td>
+</tr>
+<tr>
+<td>Pin:2</td>
+<td bgcolor='red'>FUSIONAR Po</td>
+</tr>
+<tr>
+<td>Pin:3</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR In</td>
+</tr>
+<tr>
+<td>Pin:3</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Pr</td>
+</tr>
+<tr>
+<td>Pin:4</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Yb</td>
+</tr>
+<tr>
+<td>Pin:4</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR W</td>
+</tr>
+<tr>
+<td>Pin:4</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Au</td>
+</tr>
+<tr>
+<td>Pin:4</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Ta</td>
+</tr>
+<tr>
+<td>Pin:5</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Po</td>
+</tr>
+<tr>
+<td>Pin:5</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Np</td>
+</tr>
+<tr>
+<td>Pin:5</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td>Mover adelante</td>
+<td bgcolor='red'>FUSIONAR Cm</td>
+</tr>
+</table>>];}</table>>];}

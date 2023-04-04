@@ -3,7 +3,6 @@ from typing import Container
 from constante import style
 from ventana.screens import Menu,GestionarElementosQuimicos,GestionCompuestos,GestionMaquinas,Ayuda,analizarCompuesto
 
-
 class Manager(tk.Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
