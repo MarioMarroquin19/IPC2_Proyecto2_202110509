@@ -1,7 +1,8 @@
 class TiempoMaquina:
-    def __init__(self, nombreMaquina, tiempo):
+    def __init__(self, nombreMaquina, tiempo, nombreCompuesto):
         self.nombreMaquina = nombreMaquina
         self.tiempo = tiempo
+        self.nombreCompuesto = nombreCompuesto
 
 class NodoTiempoMaquina:
     def __init__(self, TiempoMaquina, siguiente = None, anterior = None):
@@ -24,11 +25,11 @@ class listaDobleTiempoMaquina:
             self.ultimo.siguiente = nuevo_nodo
             self.ultimo = nuevo_nodo
     
-    def devolverTiempo(self, nombreMaquina):
+    def devolverTiempo(self, nombreMaquina, nombreCompuesto):
         tiempo = 0
         actual = self.primero
         while actual:
-            if actual.TiempoMaquina.nombreMaquina == nombreMaquina:
+            if actual.TiempoMaquina.nombreMaquina == nombreMaquina and actual.TiempoMaquina.nombreCompuesto == nombreCompuesto:
                 tiempo = actual.TiempoMaquina.tiempo
             actual = actual.siguiente
         return tiempo
@@ -58,11 +59,11 @@ class listaDobleTiempoMaquina1:
             self.ultimo.siguiente = nuevo_nodo
             self.ultimo = nuevo_nodo
     
-    def devolverTiempo(self, nombreMaquina):
+    def devolverTiempo(self, nombreMaquina, nombreCompuesto):
         tiempo = 0
         actual = self.primero
         while actual:
-            if actual.TiempoMaquina.nombreMaquina == nombreMaquina:
+            if actual.TiempoMaquina.nombreMaquina == nombreMaquina and actual.TiempoMaquina.nombreCompuesto == nombreCompuesto:
                 tiempo = actual.TiempoMaquina.tiempo
             actual = actual.siguiente
         return tiempo

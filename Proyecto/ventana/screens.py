@@ -368,7 +368,8 @@ class GestionCompuestos(tk.Frame):
             relief=tk.FLAT,
             activebackground=style.BACKGROUND,
             activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
-        
+
+nombreCompuesto = ""  
 class analizarCompuesto(tk.Frame):
     def __init__(self, parent, controller):
         super().__init__(parent)
@@ -378,6 +379,7 @@ class analizarCompuesto(tk.Frame):
     
     def regresar(self):
         self.controller.show_frame(GestionCompuestos)
+
 
     def seleccionarCompuesto(self):
         ventana = tk.Tk()
@@ -394,15 +396,18 @@ class analizarCompuesto(tk.Frame):
         insertarCompuesto = tk.Entry(ventana, **style.STYLE5)
         insertarCompuesto.pack(side = tk.TOP,fill = tk.BOTH,padx=22,pady=11)
 
-        def obtenerNombreCompuesto():              
+        def obtenerNombreCompuesto():  
+            global nombreCompuesto            
             nombreCompuesto = insertarCompuesto.get()
+            nombreC1 = insertarCompuesto.get()
             ventana.destroy()  
-            nuevoPinEntrada.crearTabla(nombreCompuesto,elemento_Compuesto, nuevaMaquinaIngreso)
+            nuevoPinEntrada.crearTabla(nombreC1,elemento_Compuesto, nuevaMaquinaIngreso)
 
         tk.Button(ventana, text = "Aceptar", command=obtenerNombreCompuesto, **style.STYLE, relief=tk.FLAT, activebackground=style.BACKGROUND, activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)        
         tk.Button(ventana, text = "Regresar", command=volver, **style.STYLE, relief=tk.FLAT, activebackground=style.BACKGROUND, activeforeground=style.TEXT).pack(side = tk.TOP,fill = tk.X,padx=22,pady=11)
     
     def verMaquinaTiempo(self):
+        global nombreCompuesto
         ventana = tk.Tk()
         ventana.geometry("380x500") #ancho y alto
         ventana.title("Máquinas y tiempos")
@@ -412,7 +417,7 @@ class analizarCompuesto(tk.Frame):
         def volver():
             ventana.destroy()
 
-        nuevoPinEntrada.funcionamiento(ventana,nuevaMaquinaIngreso)
+        nuevoPinEntrada.funcionamiento(ventana,nuevaMaquinaIngreso,nombreCompuesto)
         nuevoPinEntrada.verMaquinas()
 
         tk.Button(

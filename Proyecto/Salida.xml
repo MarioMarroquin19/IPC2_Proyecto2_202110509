@@ -2,7 +2,386 @@
 <RESPUESTA>
   <listaCompuestos>
     <compuesto>
-      <nombre/>
+      <nombre>Energon</nombre>
+      <maquina>prueba</maquina>
+      <tiempoOptimo>117</tiempoOptimo>
+      <instrucciones>
+        <tiempo>
+          <numeroSegundos>117</numeroSegundos>
+          <acciones>
+            <accionPin>
+              <numeroPin>3</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar In</accion>
+              <numeroPin>3</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Pr</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Yb</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar W</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Au</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Ta</accion>
+              <numeroPin>5</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Po</accion>
+              <numeroPin>5</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Np</accion>
+              <numeroPin>5</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Cm</accion>
+            </accionPin>
+          </acciones>
+        </tiempo>
+      </instrucciones>
+      <maquina>maquina1</maquina>
+      <tiempoOptimo>30</tiempoOptimo>
+      <instrucciones>
+        <tiempo>
+          <numeroSegundos>30</numeroSegundos>
+          <acciones>
+            <accionPin>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Np</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Md</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Cm</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Au</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Fusionar Ta</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar In</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Pr</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Yb</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar W</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Fusionar Po</accion>
+            </accionPin>
+          </acciones>
+        </tiempo>
+      </instrucciones>
+    </compuesto>
+    <compuesto>
+      <nombre>Compuesto1</nombre>
+      <maquina>prueba</maquina>
+      <tiempoOptimo>117</tiempoOptimo>
+      <instrucciones>
+        <tiempo>
+          <numeroSegundos>117</numeroSegundos>
+          <acciones>
+            <accionPin>
+              <numeroPin>3</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar In</accion>
+              <numeroPin>3</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Pr</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Yb</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar W</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Au</accion>
+              <numeroPin>4</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Ta</accion>
+              <numeroPin>5</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Po</accion>
+              <numeroPin>5</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Np</accion>
+              <numeroPin>5</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Cm</accion>
+            </accionPin>
+          </acciones>
+        </tiempo>
+      </instrucciones>
+      <maquina>maquina1</maquina>
+      <tiempoOptimo>30</tiempoOptimo>
+      <instrucciones>
+        <tiempo>
+          <numeroSegundos>30</numeroSegundos>
+          <acciones>
+            <accionPin>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Np</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Md</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Cm</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Au</accion>
+              <numeroPin>1</numeroPin>
+              <accion>Fusionar Ta</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar In</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Pr</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar Yb</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Mover adelante</accion>
+              <accion>Fusionar W</accion>
+              <numeroPin>2</numeroPin>
+              <accion>Fusionar Po</accion>
+            </accionPin>
+          </acciones>
+        </tiempo>
+      </instrucciones>
     </compuesto>
   </listaCompuestos>
 </RESPUESTA>
