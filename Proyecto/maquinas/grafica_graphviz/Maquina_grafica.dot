@@ -1,13 +1,35 @@
 digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='black' cellspacing='0'><tr><td colspan="2" align="center" bgcolor="yellow">maquina1</td></tr><tr><td>PIN</td><td>Elementos</td></tr><tr>
 <td>Pin:1</td>
-<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#4ca009" color="#4ca009" >A</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#a9cc97" color="#a9cc97" >73</td></tr>
+<tr><td align='center' bgcolor="#a9cc97" color="#a9cc97" >Ta</td></tr>
+<tr><td align='center' bgcolor="#a9cc97" color="#a9cc97" >Tantalio</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#de186d" color="#de186d" >B</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#f58306" color="#f58306" >79</td></tr>
+<tr><td align='center' bgcolor="#f58306" color="#f58306" >Au</td></tr>
+<tr><td align='center' bgcolor="#f58306" color="#f58306" >Oro</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#bf2210" color="#bf2210" >96</td></tr>
+<tr><td align='center' bgcolor="#bf2210" color="#bf2210" >Cm</td></tr>
+<tr><td align='center' bgcolor="#bf2210" color="#bf2210" >Curio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#31f0c4" color="#31f0c4" >101</td></tr>
+<tr><td align='center' bgcolor="#31f0c4" color="#31f0c4" >Md</td></tr>
+<tr><td align='center' bgcolor="#31f0c4" color="#31f0c4" >Mendelevio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#6ca898" color="#6ca898" >93</td></tr>
+<tr><td align='center' bgcolor="#6ca898" color="#6ca898" >Np</td></tr>
+<tr><td align='center' bgcolor="#6ca898" color="#6ca898" >Neptunio</td></tr>
 </table>
 </td>
 </tr>
@@ -16,30 +38,164 @@ digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='bla
 </tr>
 <tr>
 <td>Pin:2</td>
-<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#c01847" color="#c01847" >C</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#eea57c" color="#eea57c" >84</td></tr>
+<tr><td align='center' bgcolor="#eea57c" color="#eea57c" >Po</td></tr>
+<tr><td align='center' bgcolor="#eea57c" color="#eea57c" >Polonio</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#305277" color="#305277" >D</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#ae301f" color="#ae301f" >74</td></tr>
+<tr><td align='center' bgcolor="#ae301f" color="#ae301f" >W</td></tr>
+<tr><td align='center' bgcolor="#ae301f" color="#ae301f" >Wolframio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#a06966" color="#a06966" >70</td></tr>
+<tr><td align='center' bgcolor="#a06966" color="#a06966" >Yb</td></tr>
+<tr><td align='center' bgcolor="#a06966" color="#a06966" >Iterbio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#eaedc6" color="#eaedc6" >59</td></tr>
+<tr><td align='center' bgcolor="#eaedc6" color="#eaedc6" >Pr</td></tr>
+<tr><td align='center' bgcolor="#eaedc6" color="#eaedc6" >Praseodimio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#7af161" color="#7af161" >49</td></tr>
+<tr><td align='center' bgcolor="#7af161" color="#7af161" >In</td></tr>
+<tr><td align='center' bgcolor="#7af161" color="#7af161" >Indio</td></tr>
 </table>
 </td>
 </tr>
 </table>
 </td>
 </tr>
-<tr><td colspan="2" align="center" bgcolor="yellow">maquina2</td></tr><tr><td>PIN</td><td>Elementos</td></tr><tr>
+<tr><td colspan="2" align="center" bgcolor="yellow">prueba</td></tr><tr><td>PIN</td><td>Elementos</td></tr><tr>
 <td>Pin:1</td>
-<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#db8c8a" color="#db8c8a" >E</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#36d5f4" color="#36d5f4" >1</td></tr>
+<tr><td align='center' bgcolor="#36d5f4" color="#36d5f4" >H</td></tr>
+<tr><td align='center' bgcolor="#36d5f4" color="#36d5f4" >Hidrogeno</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#c06eaf" color="#c06eaf" >F</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#349ccc" color="#349ccc" >2</td></tr>
+<tr><td align='center' bgcolor="#349ccc" color="#349ccc" >He</td></tr>
+<tr><td align='center' bgcolor="#349ccc" color="#349ccc" >Helio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#19eaac" color="#19eaac" >3</td></tr>
+<tr><td align='center' bgcolor="#19eaac" color="#19eaac" >Li</td></tr>
+<tr><td align='center' bgcolor="#19eaac" color="#19eaac" >Litio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#72a90c" color="#72a90c" >None</td></tr>
+<tr><td align='center' bgcolor="#72a90c" color="#72a90c" >Be</td></tr>
+<tr><td align='center' bgcolor="#72a90c" color="#72a90c" >None</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#267200" color="#267200" >5</td></tr>
+<tr><td align='center' bgcolor="#267200" color="#267200" >B</td></tr>
+<tr><td align='center' bgcolor="#267200" color="#267200" >Boro</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#77c18b" color="#77c18b" >4</td></tr>
+<tr><td align='center' bgcolor="#77c18b" color="#77c18b" >C</td></tr>
+<tr><td align='center' bgcolor="#77c18b" color="#77c18b" >Carbono</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#7e7951" color="#7e7951" >7</td></tr>
+<tr><td align='center' bgcolor="#7e7951" color="#7e7951" >N</td></tr>
+<tr><td align='center' bgcolor="#7e7951" color="#7e7951" >Nitrógeno</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#13cc71" color="#13cc71" >6</td></tr>
+<tr><td align='center' bgcolor="#13cc71" color="#13cc71" >O</td></tr>
+<tr><td align='center' bgcolor="#13cc71" color="#13cc71" >Oxigeno</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#3ac5c3" color="#3ac5c3" >9</td></tr>
+<tr><td align='center' bgcolor="#3ac5c3" color="#3ac5c3" >F</td></tr>
+<tr><td align='center' bgcolor="#3ac5c3" color="#3ac5c3" >Flúor</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#90f932" color="#90f932" >10</td></tr>
+<tr><td align='center' bgcolor="#90f932" color="#90f932" >Ne</td></tr>
+<tr><td align='center' bgcolor="#90f932" color="#90f932" >Neón</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#9c5f9f" color="#9c5f9f" >11</td></tr>
+<tr><td align='center' bgcolor="#9c5f9f" color="#9c5f9f" >Na</td></tr>
+<tr><td align='center' bgcolor="#9c5f9f" color="#9c5f9f" >Sodio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#26b3b5" color="#26b3b5" >12</td></tr>
+<tr><td align='center' bgcolor="#26b3b5" color="#26b3b5" >Mg</td></tr>
+<tr><td align='center' bgcolor="#26b3b5" color="#26b3b5" >Magnesio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#1aeaf2" color="#1aeaf2" >13</td></tr>
+<tr><td align='center' bgcolor="#1aeaf2" color="#1aeaf2" >Al</td></tr>
+<tr><td align='center' bgcolor="#1aeaf2" color="#1aeaf2" >Aluminio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#267dcf" color="#267dcf" >14</td></tr>
+<tr><td align='center' bgcolor="#267dcf" color="#267dcf" >Si</td></tr>
+<tr><td align='center' bgcolor="#267dcf" color="#267dcf" >Silicio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8bdc14" color="#8bdc14" >15</td></tr>
+<tr><td align='center' bgcolor="#8bdc14" color="#8bdc14" >P</td></tr>
+<tr><td align='center' bgcolor="#8bdc14" color="#8bdc14" >Fósforo</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#f3d0a2" color="#f3d0a2" >16</td></tr>
+<tr><td align='center' bgcolor="#f3d0a2" color="#f3d0a2" >S</td></tr>
+<tr><td align='center' bgcolor="#f3d0a2" color="#f3d0a2" >Azufre</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#27a5f8" color="#27a5f8" >17</td></tr>
+<tr><td align='center' bgcolor="#27a5f8" color="#27a5f8" >Cl</td></tr>
+<tr><td align='center' bgcolor="#27a5f8" color="#27a5f8" >Cloro</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#850d73" color="#850d73" >18</td></tr>
+<tr><td align='center' bgcolor="#850d73" color="#850d73" >Ar</td></tr>
+<tr><td align='center' bgcolor="#850d73" color="#850d73" >Argón</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#dbdaf4" color="#dbdaf4" >19</td></tr>
+<tr><td align='center' bgcolor="#dbdaf4" color="#dbdaf4" >K</td></tr>
+<tr><td align='center' bgcolor="#dbdaf4" color="#dbdaf4" >Potasio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#aa7663" color="#aa7663" >20</td></tr>
+<tr><td align='center' bgcolor="#aa7663" color="#aa7663" >Ca</td></tr>
+<tr><td align='center' bgcolor="#aa7663" color="#aa7663" >Calcio</td></tr>
 </table>
 </td>
 </tr>
@@ -48,14 +204,510 @@ digraph {tbl [shape=plaintext label=<<table border='0' cellborder='1' color='bla
 </tr>
 <tr>
 <td>Pin:2</td>
-<td colspan='1' rowspan='1'><table border='0' cellpadding='0' cellspacing='0'>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
 <tr>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#097108" color="#097108" >G</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#e1d438" color="#e1d438" >21</td></tr>
+<tr><td align='center' bgcolor="#e1d438" color="#e1d438" >Sc</td></tr>
+<tr><td align='center' bgcolor="#e1d438" color="#e1d438" >Escandio</td></tr>
 </table>
 </td>
-<td><table border='0' cellpadding='0' cellspacing='0'>
-<tr><td align='center' bgcolor="#dfe782" color="#dfe782" >H</td></tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#b4ac33" color="#b4ac33" >22</td></tr>
+<tr><td align='center' bgcolor="#b4ac33" color="#b4ac33" >Ti</td></tr>
+<tr><td align='center' bgcolor="#b4ac33" color="#b4ac33" >Titanio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#45412a" color="#45412a" >23</td></tr>
+<tr><td align='center' bgcolor="#45412a" color="#45412a" >V</td></tr>
+<tr><td align='center' bgcolor="#45412a" color="#45412a" >Vanadio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#79f8a3" color="#79f8a3" >24</td></tr>
+<tr><td align='center' bgcolor="#79f8a3" color="#79f8a3" >Cr</td></tr>
+<tr><td align='center' bgcolor="#79f8a3" color="#79f8a3" >Cromo</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#c35bc0" color="#c35bc0" >25</td></tr>
+<tr><td align='center' bgcolor="#c35bc0" color="#c35bc0" >Mn</td></tr>
+<tr><td align='center' bgcolor="#c35bc0" color="#c35bc0" >Manganeso</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#74a344" color="#74a344" >26</td></tr>
+<tr><td align='center' bgcolor="#74a344" color="#74a344" >Fe</td></tr>
+<tr><td align='center' bgcolor="#74a344" color="#74a344" >Hierro</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#9cca15" color="#9cca15" >27</td></tr>
+<tr><td align='center' bgcolor="#9cca15" color="#9cca15" >Co</td></tr>
+<tr><td align='center' bgcolor="#9cca15" color="#9cca15" >Cobalto</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#da7b35" color="#da7b35" >28</td></tr>
+<tr><td align='center' bgcolor="#da7b35" color="#da7b35" >Ni</td></tr>
+<tr><td align='center' bgcolor="#da7b35" color="#da7b35" >Níquel</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#0589c4" color="#0589c4" >29</td></tr>
+<tr><td align='center' bgcolor="#0589c4" color="#0589c4" >Cu</td></tr>
+<tr><td align='center' bgcolor="#0589c4" color="#0589c4" >Cobre</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#53f06e" color="#53f06e" >30</td></tr>
+<tr><td align='center' bgcolor="#53f06e" color="#53f06e" >Zn</td></tr>
+<tr><td align='center' bgcolor="#53f06e" color="#53f06e" >Zinc</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8b50e6" color="#8b50e6" >31</td></tr>
+<tr><td align='center' bgcolor="#8b50e6" color="#8b50e6" >Ga</td></tr>
+<tr><td align='center' bgcolor="#8b50e6" color="#8b50e6" >Galio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#f552e1" color="#f552e1" >32</td></tr>
+<tr><td align='center' bgcolor="#f552e1" color="#f552e1" >Ge</td></tr>
+<tr><td align='center' bgcolor="#f552e1" color="#f552e1" >Germanio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#5fd72b" color="#5fd72b" >33</td></tr>
+<tr><td align='center' bgcolor="#5fd72b" color="#5fd72b" >As</td></tr>
+<tr><td align='center' bgcolor="#5fd72b" color="#5fd72b" >Arsénico</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#7360a7" color="#7360a7" >34</td></tr>
+<tr><td align='center' bgcolor="#7360a7" color="#7360a7" >Se</td></tr>
+<tr><td align='center' bgcolor="#7360a7" color="#7360a7" >Selenio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#6a17f2" color="#6a17f2" >35</td></tr>
+<tr><td align='center' bgcolor="#6a17f2" color="#6a17f2" >Br</td></tr>
+<tr><td align='center' bgcolor="#6a17f2" color="#6a17f2" >Bromo</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#ab61b8" color="#ab61b8" >36</td></tr>
+<tr><td align='center' bgcolor="#ab61b8" color="#ab61b8" >Kr</td></tr>
+<tr><td align='center' bgcolor="#ab61b8" color="#ab61b8" >Kriptón</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#31e99a" color="#31e99a" >37</td></tr>
+<tr><td align='center' bgcolor="#31e99a" color="#31e99a" >Rb</td></tr>
+<tr><td align='center' bgcolor="#31e99a" color="#31e99a" >Rubidio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#3315e3" color="#3315e3" >38</td></tr>
+<tr><td align='center' bgcolor="#3315e3" color="#3315e3" >Sr</td></tr>
+<tr><td align='center' bgcolor="#3315e3" color="#3315e3" >Estroncio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#28ea68" color="#28ea68" >39</td></tr>
+<tr><td align='center' bgcolor="#28ea68" color="#28ea68" >Y</td></tr>
+<tr><td align='center' bgcolor="#28ea68" color="#28ea68" >Itrio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#b58e51" color="#b58e51" >40</td></tr>
+<tr><td align='center' bgcolor="#b58e51" color="#b58e51" >Zr</td></tr>
+<tr><td align='center' bgcolor="#b58e51" color="#b58e51" >Zirconio</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>Pin:3</td>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#91bc9a" color="#91bc9a" >41</td></tr>
+<tr><td align='center' bgcolor="#91bc9a" color="#91bc9a" >Nb</td></tr>
+<tr><td align='center' bgcolor="#91bc9a" color="#91bc9a" >Niobio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#52acef" color="#52acef" >42</td></tr>
+<tr><td align='center' bgcolor="#52acef" color="#52acef" >Mo</td></tr>
+<tr><td align='center' bgcolor="#52acef" color="#52acef" >Molibdeno</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#9faea8" color="#9faea8" >43</td></tr>
+<tr><td align='center' bgcolor="#9faea8" color="#9faea8" >Tc</td></tr>
+<tr><td align='center' bgcolor="#9faea8" color="#9faea8" >Tecnecio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#162c05" color="#162c05" >44</td></tr>
+<tr><td align='center' bgcolor="#162c05" color="#162c05" >Ru</td></tr>
+<tr><td align='center' bgcolor="#162c05" color="#162c05" >Rutenio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#4f8672" color="#4f8672" >45</td></tr>
+<tr><td align='center' bgcolor="#4f8672" color="#4f8672" >Rh</td></tr>
+<tr><td align='center' bgcolor="#4f8672" color="#4f8672" >Rodio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8a0d35" color="#8a0d35" >46</td></tr>
+<tr><td align='center' bgcolor="#8a0d35" color="#8a0d35" >Pd</td></tr>
+<tr><td align='center' bgcolor="#8a0d35" color="#8a0d35" >Paladio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8bca1f" color="#8bca1f" >47</td></tr>
+<tr><td align='center' bgcolor="#8bca1f" color="#8bca1f" >Ag</td></tr>
+<tr><td align='center' bgcolor="#8bca1f" color="#8bca1f" >Plata</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#4ec635" color="#4ec635" >48</td></tr>
+<tr><td align='center' bgcolor="#4ec635" color="#4ec635" >Cd</td></tr>
+<tr><td align='center' bgcolor="#4ec635" color="#4ec635" >Cadmio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#57434e" color="#57434e" >49</td></tr>
+<tr><td align='center' bgcolor="#57434e" color="#57434e" >In</td></tr>
+<tr><td align='center' bgcolor="#57434e" color="#57434e" >Indio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#77b511" color="#77b511" >50</td></tr>
+<tr><td align='center' bgcolor="#77b511" color="#77b511" >Sn</td></tr>
+<tr><td align='center' bgcolor="#77b511" color="#77b511" >Estaño</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#89b72d" color="#89b72d" >51</td></tr>
+<tr><td align='center' bgcolor="#89b72d" color="#89b72d" >Sb</td></tr>
+<tr><td align='center' bgcolor="#89b72d" color="#89b72d" >Antimonio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#aeee07" color="#aeee07" >52</td></tr>
+<tr><td align='center' bgcolor="#aeee07" color="#aeee07" >Te</td></tr>
+<tr><td align='center' bgcolor="#aeee07" color="#aeee07" >Teluro</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#939c50" color="#939c50" >53</td></tr>
+<tr><td align='center' bgcolor="#939c50" color="#939c50" >I</td></tr>
+<tr><td align='center' bgcolor="#939c50" color="#939c50" >Yodo</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#bdf80b" color="#bdf80b" >54</td></tr>
+<tr><td align='center' bgcolor="#bdf80b" color="#bdf80b" >Xe</td></tr>
+<tr><td align='center' bgcolor="#bdf80b" color="#bdf80b" >Xenón</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#ebf097" color="#ebf097" >55</td></tr>
+<tr><td align='center' bgcolor="#ebf097" color="#ebf097" >Cs</td></tr>
+<tr><td align='center' bgcolor="#ebf097" color="#ebf097" >Cesio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#fe8ca9" color="#fe8ca9" >56</td></tr>
+<tr><td align='center' bgcolor="#fe8ca9" color="#fe8ca9" >Ba</td></tr>
+<tr><td align='center' bgcolor="#fe8ca9" color="#fe8ca9" >Bario</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8baa6b" color="#8baa6b" >57</td></tr>
+<tr><td align='center' bgcolor="#8baa6b" color="#8baa6b" >La</td></tr>
+<tr><td align='center' bgcolor="#8baa6b" color="#8baa6b" >Lantano</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#699003" color="#699003" >58</td></tr>
+<tr><td align='center' bgcolor="#699003" color="#699003" >Ce</td></tr>
+<tr><td align='center' bgcolor="#699003" color="#699003" >Cerio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#6d2384" color="#6d2384" >59</td></tr>
+<tr><td align='center' bgcolor="#6d2384" color="#6d2384" >Pr</td></tr>
+<tr><td align='center' bgcolor="#6d2384" color="#6d2384" >Praseodimio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#3d90d8" color="#3d90d8" >60</td></tr>
+<tr><td align='center' bgcolor="#3d90d8" color="#3d90d8" >Nd</td></tr>
+<tr><td align='center' bgcolor="#3d90d8" color="#3d90d8" >Neodimio</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>Pin:4</td>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#bbaafa" color="#bbaafa" >61</td></tr>
+<tr><td align='center' bgcolor="#bbaafa" color="#bbaafa" >Pm</td></tr>
+<tr><td align='center' bgcolor="#bbaafa" color="#bbaafa" >Prometio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#2bdabf" color="#2bdabf" >62</td></tr>
+<tr><td align='center' bgcolor="#2bdabf" color="#2bdabf" >Sm</td></tr>
+<tr><td align='center' bgcolor="#2bdabf" color="#2bdabf" >Samario</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#677776" color="#677776" >63</td></tr>
+<tr><td align='center' bgcolor="#677776" color="#677776" >Eu</td></tr>
+<tr><td align='center' bgcolor="#677776" color="#677776" >Europio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#b6b2de" color="#b6b2de" >64</td></tr>
+<tr><td align='center' bgcolor="#b6b2de" color="#b6b2de" >Gd</td></tr>
+<tr><td align='center' bgcolor="#b6b2de" color="#b6b2de" >Gadolinio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8a36f2" color="#8a36f2" >65</td></tr>
+<tr><td align='center' bgcolor="#8a36f2" color="#8a36f2" >Tb</td></tr>
+<tr><td align='center' bgcolor="#8a36f2" color="#8a36f2" >Terbio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#904321" color="#904321" >66</td></tr>
+<tr><td align='center' bgcolor="#904321" color="#904321" >Dy</td></tr>
+<tr><td align='center' bgcolor="#904321" color="#904321" >Disprosio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#bbdc86" color="#bbdc86" >67</td></tr>
+<tr><td align='center' bgcolor="#bbdc86" color="#bbdc86" >Ho</td></tr>
+<tr><td align='center' bgcolor="#bbdc86" color="#bbdc86" >Holmio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#630bf1" color="#630bf1" >68</td></tr>
+<tr><td align='center' bgcolor="#630bf1" color="#630bf1" >Er</td></tr>
+<tr><td align='center' bgcolor="#630bf1" color="#630bf1" >Erbio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#942ec5" color="#942ec5" >69</td></tr>
+<tr><td align='center' bgcolor="#942ec5" color="#942ec5" >Tm</td></tr>
+<tr><td align='center' bgcolor="#942ec5" color="#942ec5" >Tulio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#a0a844" color="#a0a844" >70</td></tr>
+<tr><td align='center' bgcolor="#a0a844" color="#a0a844" >Yb</td></tr>
+<tr><td align='center' bgcolor="#a0a844" color="#a0a844" >Iterbio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#19b9ef" color="#19b9ef" >71</td></tr>
+<tr><td align='center' bgcolor="#19b9ef" color="#19b9ef" >Lu</td></tr>
+<tr><td align='center' bgcolor="#19b9ef" color="#19b9ef" >Lutecio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#4b9dd8" color="#4b9dd8" >72</td></tr>
+<tr><td align='center' bgcolor="#4b9dd8" color="#4b9dd8" >Hf</td></tr>
+<tr><td align='center' bgcolor="#4b9dd8" color="#4b9dd8" >Hafnio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#b38b46" color="#b38b46" >73</td></tr>
+<tr><td align='center' bgcolor="#b38b46" color="#b38b46" >Ta</td></tr>
+<tr><td align='center' bgcolor="#b38b46" color="#b38b46" >Tantalio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#22d1ec" color="#22d1ec" >74</td></tr>
+<tr><td align='center' bgcolor="#22d1ec" color="#22d1ec" >W</td></tr>
+<tr><td align='center' bgcolor="#22d1ec" color="#22d1ec" >Wolframio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#24ea7a" color="#24ea7a" >75</td></tr>
+<tr><td align='center' bgcolor="#24ea7a" color="#24ea7a" >Re</td></tr>
+<tr><td align='center' bgcolor="#24ea7a" color="#24ea7a" >Renio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#304bc6" color="#304bc6" >76</td></tr>
+<tr><td align='center' bgcolor="#304bc6" color="#304bc6" >Os</td></tr>
+<tr><td align='center' bgcolor="#304bc6" color="#304bc6" >Osmio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#991dc8" color="#991dc8" >77</td></tr>
+<tr><td align='center' bgcolor="#991dc8" color="#991dc8" >Ir</td></tr>
+<tr><td align='center' bgcolor="#991dc8" color="#991dc8" >Iridio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#4ef5c2" color="#4ef5c2" >78</td></tr>
+<tr><td align='center' bgcolor="#4ef5c2" color="#4ef5c2" >Pt</td></tr>
+<tr><td align='center' bgcolor="#4ef5c2" color="#4ef5c2" >Platino</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#212fdb" color="#212fdb" >79</td></tr>
+<tr><td align='center' bgcolor="#212fdb" color="#212fdb" >Au</td></tr>
+<tr><td align='center' bgcolor="#212fdb" color="#212fdb" >Oro</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#cd72bb" color="#cd72bb" >80</td></tr>
+<tr><td align='center' bgcolor="#cd72bb" color="#cd72bb" >Hg</td></tr>
+<tr><td align='center' bgcolor="#cd72bb" color="#cd72bb" >Mercurio</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>Pin:5</td>
+<td colspan='1' rowspan='1'><table border='0' cellborder='0' cellpadding='0' cellspacing='0'>
+<tr>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#08e7b6" color="#08e7b6" >81</td></tr>
+<tr><td align='center' bgcolor="#08e7b6" color="#08e7b6" >Tl</td></tr>
+<tr><td align='center' bgcolor="#08e7b6" color="#08e7b6" >Talio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#0f5119" color="#0f5119" >82</td></tr>
+<tr><td align='center' bgcolor="#0f5119" color="#0f5119" >Pb</td></tr>
+<tr><td align='center' bgcolor="#0f5119" color="#0f5119" >Plomo</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#960500" color="#960500" >83</td></tr>
+<tr><td align='center' bgcolor="#960500" color="#960500" >Bi</td></tr>
+<tr><td align='center' bgcolor="#960500" color="#960500" >Bismuto</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#41f216" color="#41f216" >84</td></tr>
+<tr><td align='center' bgcolor="#41f216" color="#41f216" >Po</td></tr>
+<tr><td align='center' bgcolor="#41f216" color="#41f216" >Polonio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#cb5e34" color="#cb5e34" >85</td></tr>
+<tr><td align='center' bgcolor="#cb5e34" color="#cb5e34" >At</td></tr>
+<tr><td align='center' bgcolor="#cb5e34" color="#cb5e34" >Astato</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#972bb1" color="#972bb1" >86</td></tr>
+<tr><td align='center' bgcolor="#972bb1" color="#972bb1" >Rn</td></tr>
+<tr><td align='center' bgcolor="#972bb1" color="#972bb1" >Radón</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#21e9c5" color="#21e9c5" >87</td></tr>
+<tr><td align='center' bgcolor="#21e9c5" color="#21e9c5" >Fr</td></tr>
+<tr><td align='center' bgcolor="#21e9c5" color="#21e9c5" >Francio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#76fa8f" color="#76fa8f" >88</td></tr>
+<tr><td align='center' bgcolor="#76fa8f" color="#76fa8f" >Ra</td></tr>
+<tr><td align='center' bgcolor="#76fa8f" color="#76fa8f" >Radio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#33963d" color="#33963d" >89</td></tr>
+<tr><td align='center' bgcolor="#33963d" color="#33963d" >Ac</td></tr>
+<tr><td align='center' bgcolor="#33963d" color="#33963d" >Actinio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#11a1d4" color="#11a1d4" >90</td></tr>
+<tr><td align='center' bgcolor="#11a1d4" color="#11a1d4" >Th</td></tr>
+<tr><td align='center' bgcolor="#11a1d4" color="#11a1d4" >Torio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#a3db55" color="#a3db55" >91</td></tr>
+<tr><td align='center' bgcolor="#a3db55" color="#a3db55" >Pa</td></tr>
+<tr><td align='center' bgcolor="#a3db55" color="#a3db55" >Protactinio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#d6407a" color="#d6407a" >92</td></tr>
+<tr><td align='center' bgcolor="#d6407a" color="#d6407a" >U</td></tr>
+<tr><td align='center' bgcolor="#d6407a" color="#d6407a" >Uranio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#467396" color="#467396" >93</td></tr>
+<tr><td align='center' bgcolor="#467396" color="#467396" >Np</td></tr>
+<tr><td align='center' bgcolor="#467396" color="#467396" >Neptunio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#6fe7d1" color="#6fe7d1" >94</td></tr>
+<tr><td align='center' bgcolor="#6fe7d1" color="#6fe7d1" >Pu</td></tr>
+<tr><td align='center' bgcolor="#6fe7d1" color="#6fe7d1" >Plutonio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#7b1181" color="#7b1181" >95</td></tr>
+<tr><td align='center' bgcolor="#7b1181" color="#7b1181" >Am</td></tr>
+<tr><td align='center' bgcolor="#7b1181" color="#7b1181" >Americio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#bb98d7" color="#bb98d7" >96</td></tr>
+<tr><td align='center' bgcolor="#bb98d7" color="#bb98d7" >Cm</td></tr>
+<tr><td align='center' bgcolor="#bb98d7" color="#bb98d7" >Curio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#3e1cb5" color="#3e1cb5" >97</td></tr>
+<tr><td align='center' bgcolor="#3e1cb5" color="#3e1cb5" >Bk</td></tr>
+<tr><td align='center' bgcolor="#3e1cb5" color="#3e1cb5" >Berkelio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#ae7db8" color="#ae7db8" >98</td></tr>
+<tr><td align='center' bgcolor="#ae7db8" color="#ae7db8" >Cf</td></tr>
+<tr><td align='center' bgcolor="#ae7db8" color="#ae7db8" >Californio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#d8b58f" color="#d8b58f" >99</td></tr>
+<tr><td align='center' bgcolor="#d8b58f" color="#d8b58f" >Es</td></tr>
+<tr><td align='center' bgcolor="#d8b58f" color="#d8b58f" >Einstenio</td></tr>
+</table>
+</td>
+<td><table border='0'  cellborder='0' cellpadding='0' cellspacing='0'>
+<tr><td align='left' bgcolor="#8ee0b9" color="#8ee0b9" >100</td></tr>
+<tr><td align='center' bgcolor="#8ee0b9" color="#8ee0b9" >Fm</td></tr>
+<tr><td align='center' bgcolor="#8ee0b9" color="#8ee0b9" >Fermio</td></tr>
 </table>
 </td>
 </tr>

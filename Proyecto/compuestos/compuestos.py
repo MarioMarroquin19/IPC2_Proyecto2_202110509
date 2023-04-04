@@ -24,16 +24,14 @@ class listaDobleCompuesto:
         self.ultimo = None
 
     def insertar(self, compuesto):
-        '''for elemento in compuesto.formula:
-            elemento_Compuesto.insertar(elemento)'''
         nuevo_nodo = nodoCompuesto(compuesto = compuesto)
         if self.primero is None:
             self.primero = nuevo_nodo
             self.ultimo = nuevo_nodo
         else:
-            nuevo_nodo.siguiente = self.primero
-            self.primero.anterior = nuevo_nodo
-            self.primero = nuevo_nodo
+            nuevo_nodo.anterior = self.ultimo
+            self.ultimo.siguiente = nuevo_nodo
+            self.ultimo = nuevo_nodo
      
     def verCompuesto_Formulas(self, ventana, elemento_Compuesto):
         self.ver = Text(ventana, width=50, height=10, **style.STYLE)
@@ -56,3 +54,8 @@ class listaDobleCompuesto:
         self.primero = None
         self.ultimo = None
 
+    def devolverCompuestos(self):
+        actual = self.primero
+        while actual:
+            yield actual.compuesto.nombre
+            actual = actual.siguiente

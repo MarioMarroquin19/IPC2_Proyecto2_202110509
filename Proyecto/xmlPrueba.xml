@@ -31,68 +31,42 @@
     <Maquina>
         <nombre>maquina1</nombre>
         <numeroPines>2</numeroPines>
-        <numeroElementos>4</numeroElementos>
+        <numeroElementos>10</numeroElementos>
         <pin>
             <elementos>
-            <elemento>A</elemento>
-            <elemento>B</elemento>
+            <elemento>Ta</elemento>
+            <elemento>Au</elemento>
+            <elemento>Cm</elemento>
+            <elemento>Md</elemento>
+            <elemento>Np</elemento>
             </elementos>
         </pin>
         <pin>
             <elementos>
-            <elemento>C</elemento>
-            <elemento>D</elemento>
-            </elementos>
-        </pin>
-    </Maquina>
-    <Maquina>
-        <nombre>maquina2</nombre>
-        <numeroPines>2</numeroPines>
-        <numeroElementos>4</numeroElementos>
-        <pin>
-            <elementos>
-            <elemento>E</elemento>
-            <elemento>F</elemento>
-            </elementos>
-        </pin>
-        <pin>
-            <elementos>
-            <elemento>G</elemento>
-            <elemento>H</elemento>
+            <elemento>Po</elemento>
+            <elemento>W</elemento>
+            <elemento>Yb</elemento>
+            <elemento>Pr</elemento>
+            <elemento>In</elemento>
             </elementos>
         </pin>
     </Maquina>
  </listaMaquinas>
  <listaCompuestos>
     <compuesto>
-        <nombre>compuesto1</nombre>
+        <nombre>Compuesto1</nombre>
         <elementos>
-            <elemento>Na</elemento>
-            <elemento>Fe</elemento>
-            <elemento>H</elemento>
-            <elemento>O</elemento>
-            <elemento>C</elemento>
+            <elemento>In</elemento>
+            <elemento>Pr</elemento>
+            <elemento>Yb</elemento>
+            <elemento>W</elemento>
+            <elemento>Po</elemento>
+            <elemento>Np</elemento>
+            <elemento>Md</elemento>
+            <elemento>Cm</elemento>
+            <elemento>Au</elemento>
+            <elemento>Ta</elemento>
         </elementos>
-    </compuesto>
-    <compuesto>
-        <nombre>compuesto2</nombre>
-        <elementos>
-            <elemento>N</elemento>
-            <elemento>A</elemento>
-            <elemento>D</elemento>
-            <elemento>A</elemento>
-            <elemento>C</elemento>
-        </elementos>
-    </compuesto>
-    <compuesto>
-        <nombre>compuesto3</nombre>
-        <elementos>
-            <elemento>O</elemento>
-            <elemento>I</elemento>
-            <elemento>R</elemento>
-            <elemento>A</elemento>
-            <elemento>M</elemento>
-        </elementos>
-    </compuesto>    
+    </compuesto> 
  </listaCompuestos>
 </CONFIG>

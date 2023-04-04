@@ -16,25 +16,33 @@ class Lista_EleCompuesto:
         self.primero = None
         self.ultimo = None
 
-    def insertar(self, maquina):
-        actual  = nodo_EleCompuesto(elemento = maquina)
+    def insertar(self, elemento):
+        actual  = nodo_EleCompuesto(elemento = elemento)
         if self.primero is None:
             self.primero = actual
             self.ultimo = actual
         else:
-            actual.siguiente = self.primero
-            self.primero.anterior = actual
-            self.primero = actual
+            actual.anterior = self.ultimo
+            self.ultimo.siguiente = actual
+            self.ultimo = actual
+        
 
     #buscar todos los elementos de un compuesto
     def buscarElementos(self, codigoCompuesto):
         elementos = ""
-        actual = self.ultimo
+        actual = self.primero
         while actual:
             if actual.elemento.nombreCompuesto == codigoCompuesto:
                 elementos += actual.elemento.elemento
-            actual = actual.anterior
+            actual = actual.siguiente
         return elementos
+    
+    def devolverElementos(self, codigoCompuesto):
+        actual = self.primero
+        while actual:
+            if actual.elemento.nombreCompuesto == codigoCompuesto:
+                yield actual.elemento.elemento
+            actual = actual.siguiente
 
     def vaciar(self):
         self.primero = None
